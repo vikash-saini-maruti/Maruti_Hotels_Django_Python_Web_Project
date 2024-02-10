@@ -1,0 +1,47 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}Maruti Hotels
+{% endblock title %}
+{% block body %}
+<div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="owl-carousel testimonial-carousel py-5">
+            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                <p>Had an amazing experience at Hotel Residency! The staff was courteous, the rooms were clean, and the food was delicious. Would definitely recommend it to others</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded" src={% static 'theme/img/testimonial-1.jpg' %} style="width: 45px; height: 45px;">
+                    <div class="ps-3">
+                        <h6 class="fw-bold mb-1">Shweta Singh</h6>
+                        <small>Software Engineer</small>
+                    </div>
+                </div>
+                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+            </div>
+            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                <p>The ambiance of Hotel Residency is so inviting and cozy. I felt like I was at home away from home. The services were impeccable, and I thoroughly enjoyed my stay</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded" src={% static 'theme/img/testimonial-2.jpg' %} style="width: 45px; height: 45px;">
+                    <div class="ps-3">
+                        <h6 class="fw-bold mb-1">Aarav Patel</h6>
+                        <small>Doctor</small>
+                    </div>
+                </div>
+                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+            </div>
+            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                <p>Stayed at Hotel Residency for a business trip, and it was a great decision. The location is convenient, and the facilities provided exceeded my expectations. Will surely choose this hotel again for future visits</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded" src={% static 'theme/img/testimonial-3.jpg' %} style="width: 45px; height: 45px;">
+                    <div class="ps-3">
+                        <h6 class="fw-bold mb-1">Rohan Singh</h6>
+                        <small>Marketing Manager</small>
+                    </div>
+                </div>
+                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+{% endblock body %}
