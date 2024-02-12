@@ -53,17 +53,38 @@
                                 <a href="/gallery" class="nav-item nav-link ">Gallery</a>
 
                                         <a href="/user/bookings" class="nav-item nav-link ">My Bookings</a>
-                                        <a href="" class="nav-item nav-link " onclick="showUnderDevelopmentAlert();">Personal Advisory</a>
-                                        <a href="" class="nav-item nav-link " onclick="showUnderDevelopmentAlert();">Earned Coins</a>
-                                        <a href="" class="nav-item nav-link " onclick="showUnderDevelopmentAlert();">Report about staff</a>
+                                        <a href="" class="nav-item nav-link " onclick="showUnderDevelopmentAlert();">Advisory</a>
+                                        <div class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                                            <div class="dropdown-menu rounded-0 m-0">
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Get more discounts</a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Report staff behaviour </a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Report other issue</a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Emergency services </a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Special decoration</a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Get a personal assistant </a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Food facility </a>
+                                            </div>
+                                        </div>       
 
                                 {% endif %}
                                 {% if user.is_staff %}
 
-                                        <a href="/staff/allbookings" class="nav-item nav-link ">All Bookings</a>
-                                        <a href="" class="nav-item nav-link " onclick="showUnderDevelopmentAlert();">Legel advisory</a>
-                                        <a href="" class="nav-item nav-link " onclick="showUnderDevelopmentAlert();">Contact to Head</a>
+                                        <a href="/staff/allbookings" class="nav-item nav-link ">Bookings</a>
+                                        <a href="" class="nav-item nav-link " onclick="showUnderDevelopmentAlert();">Advisory</a>
 
+                                        <div class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More..</a>
+                                            <div class="dropdown-menu rounded-0 m-0">
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Contact to Head</a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Report an issue </a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Report cx issue</a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Emergency services </a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Task management</a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Sallary issue</a>
+                                                <a href="" class="dropdown-item" onclick="showUnderDevelopmentAlert();">Food testing </a>
+                                            </div>
+                                        </div>
                                 
                                 {% endif %}
 
@@ -79,12 +100,13 @@
                                 <a href="/gallery" class="nav-item nav-link ">Gallery</a>
                                 <a href="/about" class="nav-item nav-link">About</a>
                                 <a href="/user" class="nav-item nav-link">Booking</a>
-                                <a href="/room" class="nav-item nav-link">Rooms</a>
+                                
                                 <a href="/contact" class="nav-item nav-link">Contact</a>
 
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
                                     <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="/room" class="dropdown-item">Rooms</a>
                                         <a href="/service" class="dropdown-item">Services</a>
                                         <a href="/team" class="dropdown-item">Our Team</a>
                                         <a href="/testimonial" class="dropdown-item">Testimonial</a>
