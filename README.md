@@ -42,13 +42,58 @@ Maruti Hotels is a Python Django web application designed to streamline hotel ma
 
 ## Installation 
 
-To run the project locally:
+Here's a rewritten version of the setup instructions in simpler language for a README:
+Description 
+1. **Clone the Repository**: Copy the #ThisRepo from GitHub to your computer.
 
-1. Clone the repository.
-2. Install Python and Django if not already installed.
-3. Navigate to the project directory in the terminal.
-4. Run `python manage.py runserver` to start the development server.
-5. Access the application in a web browser at `http://localhost:8000`.
+2. **Install Python and Django**: Make sure Python and Django are installed on your computer.
+
+3. **Open VS Code or a Terminal**: Open VS Code or any terminal and code editor. Make sure the terminal is in the same directory as the `manage.py` file.
+
+4. **Set Up a Virtual Environment**:
+   - **Windows**: Use this command to create a virtual environment:
+     ```
+     python -m venv env
+     ```
+     And to activate the virtual environment:
+     ```
+     .\env\Scripts\activate
+     ```
+   - **Linux/Mac**: Use these commands to create and activate a virtual environment:
+     ```
+     python3 -m venv env
+     ```
+     ```
+     source env/bin/activate
+     ```
+
+5. **Install Required Dependencies**:
+   - Install the dependencies listed in the `requirements.txt` file using this command:
+     ```
+     pip install -r requirements.txt
+     ```
+   - Alternatively, you can install dependencies automatically using `repoinstall.py`:
+     ```
+     python repoinstall.py
+     ```
+
+6. **Run Migrations**:
+   ```
+   python manage.py makemigrations
+   ```
+
+7. **Apply Migrations**:
+   ```
+   python manage.py migrate
+   ```
+
+8. **Start the Development Server**:
+   ```
+   python manage.py runserver
+   ```
+
+9. **Access the Project**:
+   Open a web browser and enter the URL shown in the terminal to access the project.
 
 ----------------------------------------------------------------------------------
 
